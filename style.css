@@ -1,0 +1,107 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 400px; /* Increased width */
+    margin: 50px auto;
+    padding: 30px; /* Increased padding */
+    background-color: #fff;
+    border-radius: 15px; /* Increased border radius */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+form {
+    margin-bottom: 30px; /* Increased margin */
+}
+
+input[type="text"] {
+    width: calc(100% - 100px); /* Increased width */
+    padding: 10px; /* Increased padding */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Increased border radius */
+    margin-right: 20px; /* Increased margin */
+}
+
+button[type="submit"] {
+    padding: 10px 20px; /* Increased padding */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px; /* Increased border radius */
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px; /* Increased padding */
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between; /* Align items to the left and right */
+    align-items: center;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 8px; /* Increased border radius */
+    padding: 8px 15px; /* Increased padding */
+    cursor: pointer;
+    margin-left: 20px; /* Increased margin */
+}
+
+
+/* Add counter for numbering tasks */
+ul {
+    list-style-type: none;
+    padding: 0;
+    counter-reset: task-counter; /* Initialize the counter */
+}
+
+li {
+    padding: 15px; /* Increased padding */
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between; /* Align items to the left and right */
+    align-items: center;
+    counter-increment: task-counter; /* Increment the counter for each list item */
+}
+
+li::before {
+    content: counter(task-counter) ". "; /* Add counter with period */
+}
+
+.delete-button {
+    background-color: blue !important;
+    color: white;
+    border: none;
+    border-radius: 6px; /* Increased border radius */
+    padding: 6px 12px; /* Increased padding */
+    cursor: pointer;
+    margin-left: 90px; /* Increased margin */
+}
+
+.delete-button:hover {
+    background-color: purple;
+}
